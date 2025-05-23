@@ -33,15 +33,6 @@ def single_sim_run(
 ):
     """
     Runs a single simulation for a given feature type and model configuration.
-
-    Running options: 
-    - Jupyter notebook: 
-        Start HPC job with GPU, activate environment, run single_sim_run(params) (no wandb tracking available)
-    - Command line: 
-        Start gpu node in Greene terminal, ssh into GPU node, activate singularity environment with -nv support and -ssl certs, run python -m sim.sim_run example_config.yml
-    - SBATCH job: 
-        Setup SBATCH job in sim/experiment_configs/example_sbatch_config.yml
-        Run sbatch run_sim.sh from root
     
     Parameters:
     ----------
